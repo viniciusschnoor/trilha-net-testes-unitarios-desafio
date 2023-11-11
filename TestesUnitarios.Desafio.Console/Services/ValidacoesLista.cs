@@ -4,7 +4,7 @@ namespace TestesUnitarios.Desafio.Console.Services
     {
         public List<int> RemoverNumerosNegativos(List<int> lista)
         {
-            var listaSemNegativos = lista.Where(x => x > 0);
+            var listaSemNegativos = lista.Where(x => x >= 0);
             return listaSemNegativos.ToList();
         }
 
